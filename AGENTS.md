@@ -11,3 +11,8 @@ This project uses **pnpm** exclusively. All agents and contributors must follow 
 - Use `pnpm dlx` instead of `npx` for one-off package execution.
 - The `packageManager` field in `package.json` enforces the correct version.
 - Do **not** create or commit a `package-lock.json` or `yarn.lock` file.
+
+## Additonal Rules
+
+You are writing code for a Next.js app with SSR. Never use nondeterministic values (Math.random, Date.now, crypto.randomUUID) in component render paths
+or useState initializers — move them into useEffect or event handlers to avoid hydration mismatches
