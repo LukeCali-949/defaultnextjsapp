@@ -14,7 +14,7 @@ This project uses **pnpm** exclusively. All agents and contributors must follow 
 
 ## Additonal Rules
 
-You do not need to start the dev server at any point, it is already running or will be done manually, so pnpm run dev is necessary
+You do not need to start the dev server at any point, it is already running or will be done manually, so pnpm run dev is unnecessary
 
 You are writing code for a Next.js app with SSR. Never use nondeterministic values (Math.random, Date.now, crypto.randomUUID) in component render paths
 or useState initializers — move them into useEffect or event handlers to avoid hydration mismatches
